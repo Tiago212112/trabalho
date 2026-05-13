@@ -26,9 +26,9 @@ class CadastroPage extends StatelessWidget {
                 width: 300, 
                 
                 decoration: BoxDecoration(
-                  color: const Color.fromARGB(255, 52, 212, 12),
+                  color: const Color.fromARGB(255, 13, 79, 83),
                   border: Border.all(
-                    color: Colors.blueAccent,
+                    color: const Color.fromARGB(255, 10, 49, 117),
                     width: 5,
                   )
                 ),
@@ -37,129 +37,151 @@ class CadastroPage extends StatelessWidget {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     SizedBox(height: 40,),
+
+
+                    //Linha 1
                     TextField(
                       decoration: InputDecoration( 
                         filled: true,
-                        fillColor: const Color.fromARGB(255, 170, 170, 170),
+                        fillColor: const Color.fromARGB(255, 18, 164, 201),
                         contentPadding: EdgeInsets.symmetric(
                           vertical: 15,
                           horizontal: 60,
                         ),
-                        hintText: "Nome de Usuário",
+                        hintText: "Nome de Usuario",
+                        prefixIcon: Icon(Icons.person),iconColor:Colors.white,
+                        
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.all(Radius.circular(30.0)),
                           borderSide: BorderSide.none,
                         ),
                       ),
                     ),
+                    //linha 2
                     TextField(
-                      decoration: InputDecoration(
-                        isDense: true,
+                      decoration: InputDecoration( 
                         filled: true,
-                        fillColor: const Color.fromARGB(255, 170, 170, 170),
+                        fillColor: const Color.fromARGB(255, 18, 164, 201),
                         contentPadding: EdgeInsets.symmetric(
                           vertical: 15,
                           horizontal: 60,
                         ),
                         hintText: "Nome",
+                        prefixIcon: Icon(Icons.person),iconColor:Colors.white,
+                        
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.all(Radius.circular(30.0)),
                           borderSide: BorderSide.none,
                         ),
                       ),
                     ),
-                    TextField(
-                      decoration: InputDecoration(
-                        isDense: true,
+                 //linha 3
+                 TextField(
+                      decoration: InputDecoration( 
                         filled: true,
-                        fillColor: const Color.fromARGB(255, 170, 170, 170),
-                          contentPadding: EdgeInsets.symmetric(
+                        fillColor: const Color.fromARGB(255, 18, 164, 201),
+                        contentPadding: EdgeInsets.symmetric(
                           vertical: 15,
                           horizontal: 60,
                         ),
                         hintText: "Sobrenome",
+                        prefixIcon: Icon(Icons.person),iconColor:Colors.white,
+                        
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.all(Radius.circular(30.0)),
                           borderSide: BorderSide.none,
                         ),
                       ),
                     ),
-
-                    TextField(
-                      decoration: InputDecoration(
-                        isDense: true,
+//linha 4
+                  TextField(
+                      decoration: InputDecoration( 
                         filled: true,
-                        fillColor: const Color.fromARGB(255, 170, 170, 170),
-                          contentPadding: EdgeInsets.symmetric(
+                        fillColor: const Color.fromARGB(255, 18, 164, 201),
+                        contentPadding: EdgeInsets.symmetric(
                           vertical: 15,
                           horizontal: 60,
                         ),
                         hintText: "Email",
+                        prefixIcon: Icon(Icons.mail),iconColor:Colors.white,
+                        
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.all(Radius.circular(30.0)),
                           borderSide: BorderSide.none,
                         ),
                       ),
                     ),
-
-                    TextField(
-                      decoration: InputDecoration(
-                        isDense: true,
+                 //linha 5
+                  TextField(
+                      decoration: InputDecoration( 
                         filled: true,
-                        fillColor: const Color.fromARGB(255, 170, 170, 170),
-                          contentPadding: EdgeInsets.symmetric(
+                        fillColor: const Color.fromARGB(255, 18, 164, 201),
+                        contentPadding: EdgeInsets.symmetric(
                           vertical: 15,
                           horizontal: 60,
                         ),
                         hintText: "Senha",
+                        prefixIcon: Icon(Icons.lock),iconColor:Colors.white,
+                        
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.all(Radius.circular(30.0)),
                           borderSide: BorderSide.none,
                         ),
                       ),
                     ),
-                     TextField(
-                        decoration: InputDecoration(
-                          isDense: true,
-                          filled: true,
-                          fillColor: const Color.fromARGB(255, 170, 170, 170),
-                            contentPadding: EdgeInsets.symmetric(
-                            vertical: 15,
-                            horizontal: 40,
-                          ),
-                          hintText: "Confirmação de Senha",
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.all(Radius.circular(30.0)),
-                            borderSide: BorderSide.none,
-                          ),
+                   //linha 6
+                    TextField(
+                      decoration: InputDecoration( 
+                         hintStyle: const TextStyle(fontSize: 13),
+                        filled: true,
+                        fillColor: const Color.fromARGB(255, 18, 164, 201),
+                        contentPadding: EdgeInsets.symmetric(
+                          vertical: 15,
+                          horizontal: 60,
+                        ),
+                        hintText: "Confirmação de senha",
+                        prefixIcon: Icon(Icons.lock),iconColor:Colors.white,
+                        
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.all(Radius.circular(30.0)),
+                          borderSide: BorderSide.none,
                         ),
                       ),
+                    ),
                     
                     
-                      
-                       TextField(
-                        decoration: InputDecoration(
-                          isDense: true,
-                          filled: true,
-                          fillColor: const Color.fromARGB(255, 170, 170, 170),
-                            contentPadding: EdgeInsets.symmetric(
-                            vertical: 15,
-                            horizontal: 40,
-                          ),
-                          hintText: "Data de Nascimento",
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.all(Radius.circular(30.0)),
-                            borderSide: BorderSide.none,
-                          ),
+                      //linha 7
+                      TextField(
+                      decoration: InputDecoration( 
+                        hintStyle: const TextStyle(fontSize: 14),
+                        filled: true,
+                        fillColor: const Color.fromARGB(255, 18, 164, 201),
+                        contentPadding: EdgeInsets.symmetric(
+                          vertical: 15,
+                          horizontal: 60,
                         ),
+                       
+                        hintText: "Data de nascimento",
+                        prefixIcon: Icon(Icons.calendar_month),iconColor:Colors.white,
+                        
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.all(Radius.circular(30.0)),
+                          borderSide: BorderSide.none,
+                        ),
+                      ),
+
+                    
                     ),
                     
                     
                      ElevatedButton(
+                        
                       onPressed: (){
                         Navigator.of(context).pushNamed('/perfil');
                       }, 
                       style: ElevatedButton.styleFrom(
+                        foregroundColor: const Color.fromARGB(255, 4, 99, 67),
+                        backgroundColor:Colors.green,
             minimumSize: const Size(double.infinity, 45), 
             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
           ),
