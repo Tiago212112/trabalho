@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:trabalho/screens/biblioteca_page.dart';
+import 'package:trabalho/screens/home_page.dart';
 
 class PerfilPage extends StatelessWidget {
   const PerfilPage({super.key});
@@ -85,6 +87,17 @@ class PerfilPage extends StatelessWidget {
                ),
              ),
         
+        TextField(
+              decoration: InputDecoration(
+                hintText: "Procurar Amizades",
+                prefixIcon: Icon(Icons.search),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(25.0),
+                ),
+                filled: true,
+                fillColor: Colors.grey,
+              ),
+            ),
             SizedBox(height: 40,),
             Column(
               children: [
@@ -198,23 +211,32 @@ class PerfilPage extends StatelessWidget {
                 
               ],
             ),
-            SizedBox(height: 30,),
-            TextField(
-              decoration: InputDecoration(
-                hintText: "Procurar Amizades",
-                prefixIcon: Icon(Icons.search),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(25.0),
-                ),
-                filled: true,
-                fillColor: Colors.grey,
-              ),
-            ),
+            
           ],
           
         ),
+        
       ),
-      
+      bottomNavigationBar: BottomAppBar(
+          color: const Color.fromARGB(255, 4, 23, 56),
+          child: Row(
+            children: [
+              Expanded(child: IconButton(onPressed: (){
+                Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => HomePage()));},
+                icon: Icon(Icons.home),)),
+              
+              Expanded(child: IconButton(onPressed: (){
+                Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => BibliotecaPage()));
+                }, 
+                icon: Icon(Icons.folder),)),
+              
+              Expanded(child: IconButton(onPressed: (){
+                Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => PerfilPage()));}, 
+                icon: Icon(Icons.person),)),
+              
+            ],
+          ),
+        ),
     );
   }
 }
