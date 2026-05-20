@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:trabalho/screens/biblioteca_page.dart';
+import 'package:trabalho/screens/perfil_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -135,29 +137,29 @@ class HomePage extends StatelessWidget {
          ],
          
        ),
-        bottomNavigationBar: BottomNavigationBar(
-          backgroundColor: const Color.fromARGB(255, 14, 10, 44),
-          unselectedItemColor: Colors.white,
-          selectedItemColor: Colors.greenAccent,
-          items: [
-            BottomNavigationBarItem(
-              icon: Icon(Icons.home),
-              label: "Home",
-              ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.folder),
-              label: "Biblioteca",
-              ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.person),
-              label: "Perfil",
-              ),
-          ]
+        bottomNavigationBar: BottomAppBar(
+          color: const Color.fromARGB(255, 4, 23, 56),
+          child: Row(
+            children: [
+              Expanded(child: IconButton(onPressed: (){
+                Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => HomePage()));},
+                icon: Icon(Icons.home),)),
+              
+              Expanded(child: IconButton(onPressed: (){
+                 Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => BibliotecaPage()));                                                     
+                }, 
+                icon: Icon(Icons.folder),)),
+              
+              Expanded(child: IconButton(onPressed: (){
+                Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => PerfilPage()));}, 
+                icon: Icon(Icons.person),)),
+              
+            ],
           ),
+        ),
        );
        
     
     
 }
 }
-
