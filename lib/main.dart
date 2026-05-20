@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:trabalho/cadastro_page.dart';
-import 'package:trabalho/home_page.dart';
-import 'package:trabalho/perfil_page.dart';
-
 
 void main(){
 
@@ -16,12 +13,7 @@ class MeuApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: '/',
-      routes: {
-        '/': (_) => CadastroPage(),
-        '/perfil': (_) => PerfilPage(),
-        '/home': (_) => HomePage(),
-      },
+      home: CadastroPage(),
 );
   }
 }
