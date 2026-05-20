@@ -7,19 +7,11 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        
-        title: Padding(
-          padding: const EdgeInsets.only(left: 100,),
-          child: Text("Biblioteca de jogos"),
-        ),
-        titleTextStyle: TextStyle(
-          color: Colors.white,
-          fontSize: 13,
-        ),
         backgroundColor: const Color.fromARGB(255, 4, 23, 56),
       ),
-      backgroundColor: const Color.fromARGB(255, 4, 23, 56),
 
+      backgroundColor: const Color.fromARGB(255, 4, 23, 56),
+      
        body: Column(
          children: [
           Text("Jogados recentemente", 
@@ -70,6 +62,9 @@ class HomePage extends StatelessWidget {
         "Jogando Battlefield 4",
         style: TextStyle(color: Colors.greenAccent),
         ),
+        trailing: IconButton(
+          onPressed: (){}, 
+          icon: Icon(Icons.chat, color: Colors.white,)),
   ), 
                  ListTile(
     leading: CircleAvatar(
@@ -89,6 +84,9 @@ class HomePage extends StatelessWidget {
         "Jogando Elden Ring",
         style: TextStyle(color: Colors.greenAccent),
         ),
+        trailing: IconButton(
+          onPressed: (){}, 
+          icon: Icon(Icons.chat, color: Colors.white,)),
   ),
                  ListTile(
     leading: CircleAvatar(
@@ -108,6 +106,9 @@ class HomePage extends StatelessWidget {
         "Jogando Far Cry 5",
         style: TextStyle(color: Colors.greenAccent),
         ),
+        trailing: IconButton(
+          onPressed: (){}, 
+          icon: Icon(Icons.chat, color: Colors.white,)),
   ),
                  ListTile(
     leading: CircleAvatar(
@@ -127,11 +128,32 @@ class HomePage extends StatelessWidget {
         "Offline",
         style: TextStyle(color: Colors.redAccent),
         ),
+        trailing: IconButton(
+          onPressed: (){}, 
+          icon: Icon(Icons.chat, color: Colors.white,)),
   ),
          ],
          
        ),
-
+        bottomNavigationBar: BottomNavigationBar(
+          backgroundColor: const Color.fromARGB(255, 14, 10, 44),
+          unselectedItemColor: Colors.white,
+          selectedItemColor: Colors.greenAccent,
+          items: [
+            BottomNavigationBarItem(
+              icon: Icon(Icons.home),
+              label: "Home",
+              ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.folder),
+              label: "Biblioteca",
+              ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.person),
+              label: "Perfil",
+              ),
+          ]
+          ),
        );
        
     
