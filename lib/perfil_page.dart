@@ -29,7 +29,7 @@ class PerfilPage extends StatelessWidget {
               decoration: BoxDecoration(
                 image: DecorationImage(
                   opacity: 0.5,
-                  image: AssetImage("assets/images/darksouls.jpg",),
+                  image: NetworkImage("https://p325k7wa.twic.pics/high/dark-souls/dark-souls-3/00-page-setup/ds3_game-thumbnail.jpg?twic=v1/resize=760/step=10/quality=80",),
                   fit: BoxFit.cover
                   
                   ),
@@ -41,7 +41,7 @@ class PerfilPage extends StatelessWidget {
                     backgroundColor: Colors.green,
                     child: CircleAvatar(
                       radius: 30,
-                      backgroundImage: AssetImage("assets/images/darksouls.jpg"),
+                      backgroundImage: NetworkImage("https://p325k7wa.twic.pics/high/dark-souls/dark-souls-3/00-page-setup/ds3_game-thumbnail.jpg?twic=v1/resize=760/step=10/quality=80"),
                       
                     ),
                   ),
@@ -107,7 +107,7 @@ class PerfilPage extends StatelessWidget {
                     leading: CircleAvatar(
                       backgroundColor: Colors.white,
                       radius: 30,             
-                      child: Image.asset("assets/images/user.png",
+                      child: Image.network("https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png",
                        fit: BoxFit.cover,
                        width: 30,
                        height: 30,
@@ -133,7 +133,7 @@ class PerfilPage extends StatelessWidget {
                     leading: CircleAvatar(
                       backgroundColor: Colors.white,
                       radius: 30,             
-                      child: Image.asset("assets/images/user.png",
+                      child: Image.network("https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png",
                        fit: BoxFit.cover,
                        width: 30,
                        height: 30,
@@ -159,7 +159,7 @@ class PerfilPage extends StatelessWidget {
                     leading: CircleAvatar(
                       backgroundColor: Colors.white,
                       radius: 30,             
-                      child: Image.asset("assets/images/user.png",
+                      child: Image.network("https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png",
                        fit: BoxFit.cover,
                        width: 30,
                        height: 30,
@@ -185,7 +185,7 @@ class PerfilPage extends StatelessWidget {
                     leading: CircleAvatar(
                       backgroundColor: Colors.white,
                       radius: 30,             
-                      child: Image.asset("assets/images/user.png",
+                      child: Image.network("https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png",
                        fit: BoxFit.cover,
                        width: 30,
                        height: 30,
