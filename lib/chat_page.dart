@@ -11,7 +11,7 @@ class ChatPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Lista reativa de mensagens (Texto, Lado do chat)
+    
     final mensagens = ValueNotifier<List<Map<String, dynamic>>>([
       {'txt': 'Oi!', 'eu': false},
       {'txt': 'Tudo bem?', 'eu': true},
@@ -23,7 +23,7 @@ class ChatPage extends StatelessWidget {
       appBar: AppBar(title: const Text('Usuário 3')),
       body: Column(
         children: [
-          // Exibe as mensagens e atualiza automaticamente
+          
           Expanded(
             child: ValueListenableBuilder(
               valueListenable: mensagens,
@@ -46,8 +46,7 @@ class ChatPage extends StatelessWidget {
               },
             ),
           ),
-          
-          // Campo de texto e botão de enviar
+        
           Row(
             children: [
               Expanded(child: TextField(controller: controller)),
@@ -55,7 +54,6 @@ class ChatPage extends StatelessWidget {
                 icon: const Icon(Icons.send),
                 onPressed: () {
                   if (controller.text.isEmpty) return;
-                  // Atualiza a lista adicionando o novo item
                   mensagens.value = [...mensagens.value, {'txt': controller.text, 'eu': true}];
                   controller.clear();
                 },
