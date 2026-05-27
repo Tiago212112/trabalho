@@ -111,9 +111,24 @@ class BibliotecaPage extends StatelessWidget {
               width: 360,
               height: 50,
               decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  transform: GradientRotation(50),
+                  colors: [
+                    Colors.black,
+                    Colors.white,
+                  ] ),
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(5),
               ),
+              child: Row(
+                children: [
+                  SizedBox(width: 20,),
+                  Image.network("https://static.wikia.nocookie.net/thelastofus/images/4/49/No_Matter_What_Part_I.png/revision/latest/scale-to-width-down/56?cb=20220902232954"),
+                  SizedBox(width: 20,),
+                  Text("PlaceHolder"),
+                ],
+              ),
+              
             ),
             SizedBox(height: 20,
             ),
