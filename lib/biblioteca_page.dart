@@ -88,7 +88,8 @@ class BibliotecaPage extends StatelessWidget {
               ],
             ),
         
-        
+              SizedBox(height: 20,),
+            
             ElevatedButton(onPressed: (){}, 
             style: ElevatedButton.styleFrom(
               minimumSize: Size(900, 50),
@@ -102,6 +103,8 @@ class BibliotecaPage extends StatelessWidget {
                 fontWeight: FontWeight.bold, 
                 ),   
             ),
+            
+            
             child: Text("Adicionar um jogo", )),
         
             SizedBox(height: 20,
@@ -115,7 +118,7 @@ class BibliotecaPage extends StatelessWidget {
                   transform: GradientRotation(50),
                   colors: [
                     Colors.black,
-                    Colors.white,
+                    const Color.fromARGB(255, 194, 192, 192),
                   ] ),
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(5),
@@ -125,7 +128,13 @@ class BibliotecaPage extends StatelessWidget {
                   SizedBox(width: 20,),
                   Image.network("https://static.wikia.nocookie.net/thelastofus/images/4/49/No_Matter_What_Part_I.png/revision/latest/scale-to-width-down/56?cb=20220902232954"),
                   SizedBox(width: 20,),
-                  Text("PlaceHolder"),
+                  Text("Não importa como", 
+                  style: TextStyle(
+                    fontSize: 17,
+
+                  ),),
+                  SizedBox(width: 30,),
+                  Text(" 20 Pontos"),
                 ],
               ),
               
@@ -137,8 +146,28 @@ class BibliotecaPage extends StatelessWidget {
               width: 360,
               height: 50,
               decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  transform: GradientRotation(50),
+                  colors: [
+                    Colors.red,
+                    const Color.fromARGB(255, 13, 46, 177),
+                  ]
+                  ),
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(5),
+              ),
+              child: Row(
+                children: [
+                      SizedBox(width: 20,),
+                      Image.network("https://static.wikia.nocookie.net/spidermanps4/images/1/16/A_New_Adventure.png/revision/latest?cb=20231024190236"),
+                      SizedBox(width: 20,),
+                      Text("Uma nova aventura", 
+                      style: TextStyle(
+                        fontSize: 17,
+                      ),),
+                      SizedBox(width: 30,),
+                      Text("20 Pontos"),
+                ],
               ),
             ),
             SizedBox(height: 20,
@@ -148,10 +177,36 @@ class BibliotecaPage extends StatelessWidget {
               width: 360,
               height: 50,
               decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  transform: GradientRotation(50),
+                  colors: [
+                    Colors.black,
+                    const Color.fromARGB(255, 9, 13, 31),
+                  ]
+                  ),
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(5),
               ),
-            )
+              child: Row(
+                children: [
+                      SizedBox(width: 20,),
+                      Image.network("https://static.wikia.nocookie.net/hollowknight/images/b/bf/Achievement_Falsehood.png/revision/latest/scale-to-width-down/64?cb=20181124043546"),
+                      SizedBox(width: 20,),
+                      Text("Falsidade", 
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 17,
+                      ),),
+                      SizedBox(width: 105,),
+                      Text("10 Pontos",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                      ),
+                ],
+              ),
+            ),
+            
           ],
           
           
