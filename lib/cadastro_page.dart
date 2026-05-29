@@ -51,7 +51,7 @@ class CadastroPage extends StatelessWidget {
                       SizedBox(height: 40,),
         
         
-                      //Linha 1
+                      
                       TextField(
                         decoration: InputDecoration( 
                           filled: true,
@@ -69,7 +69,7 @@ class CadastroPage extends StatelessWidget {
                           ),
                         ),
                       ),
-                      //linha 2
+                      
                       TextField(
                         decoration: InputDecoration( 
                           filled: true,
@@ -87,7 +87,7 @@ class CadastroPage extends StatelessWidget {
                           ),
                         ),
                       ),
-                   //linha 3
+                   
                    TextField(
                         decoration: InputDecoration( 
                           filled: true,
@@ -105,7 +105,7 @@ class CadastroPage extends StatelessWidget {
                           ),
                         ),
                       ),
-        //linha 4
+        
                     TextField(
                         decoration: InputDecoration( 
                           filled: true,
@@ -123,7 +123,7 @@ class CadastroPage extends StatelessWidget {
                           ),
                         ),
                       ),
-                   //linha 5
+                   
                     TextField(
                         decoration: InputDecoration( 
                           filled: true,
@@ -141,7 +141,7 @@ class CadastroPage extends StatelessWidget {
                           ),
                         ),
                       ),
-                     //linha 6
+                     
                       TextField(
                         decoration: InputDecoration( 
                            hintStyle: const TextStyle(fontSize: 13),
@@ -162,7 +162,7 @@ class CadastroPage extends StatelessWidget {
                       ),
                       
                       
-                        //linha 7
+                        
                         TextField(
                         decoration: InputDecoration( 
                           hintStyle: const TextStyle(fontSize: 14),
