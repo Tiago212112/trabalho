@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:trabalho/cadastro_page.dart';
+import 'package:trabalho/screens/cadastro_page.dart';
 
 void main(){
 
