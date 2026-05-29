@@ -8,15 +8,10 @@ class PerfilPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 4, 29, 49),
+      backgroundColor: const Color.fromARGB(255, 4, 23, 56),
       appBar: AppBar(
         backgroundColor: Colors.greenAccent,
-        elevation: 0,
-        actions: [
-            IconButton(
-              onPressed: (){}, 
-              icon: Icon(Icons.edit),),
-        ],
+        
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -86,6 +81,11 @@ class PerfilPage extends StatelessWidget {
                ),
                ),
              ),
+             
+             
+             
+        
+        SizedBox(height: 30,),
         
         TextField(
               decoration: InputDecoration(
@@ -98,7 +98,7 @@ class PerfilPage extends StatelessWidget {
                 fillColor: Colors.grey,
               ),
             ),
-            SizedBox(height: 40,),
+            SizedBox(height: 30,),
             Column(
               children: [
                 Padding(
