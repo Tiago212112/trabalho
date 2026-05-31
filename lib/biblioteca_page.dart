@@ -88,27 +88,7 @@ class BibliotecaPage extends StatelessWidget {
               ],
             ),
         
-              SizedBox(height: 20,),
-            
-            ElevatedButton(onPressed: (){}, 
-            style: ElevatedButton.styleFrom(
-              minimumSize: Size(900, 50),
-              maximumSize: Size(900, 50),
-              backgroundColor: Colors.white,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(10),
-              ),
-              textStyle: TextStyle(
-                fontSize: 15,
-                fontWeight: FontWeight.bold, 
-                ),   
-            ),
-            
-            
-            child: Text("Adicionar um jogo", )),
-        
-            SizedBox(height: 20,
-            ),
+              SizedBox(height: 40,),
             
             Container(
               width: 360,
