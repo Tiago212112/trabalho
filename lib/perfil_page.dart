@@ -10,10 +10,16 @@ class PerfilPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 4, 23, 56),
       appBar: AppBar(
-        backgroundColor: Colors.greenAccent,
+        backgroundColor: const Color.fromARGB(255, 4, 23, 56),
+        title: Center(
+          child: Text("Perfil", 
+          style: TextStyle(
+           color: Colors.white
+        ),)),
         actions: [ IconButton(
+          color: Colors.white,
           onPressed: (){}, 
-        icon: Icon(Icons.edit) ),
+        icon: Icon(Icons.edit)),
         ]
       ),
       body: SingleChildScrollView(
