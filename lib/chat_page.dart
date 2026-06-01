@@ -26,7 +26,7 @@ class ChatPage extends StatelessWidget {
           color: Colors.white,
         ),
         title: 
-        Text('Usuário 3', 
+        Text('Usuário', 
         style: TextStyle(
         color: Colors.white),
         ),
