@@ -87,8 +87,25 @@ class BibliotecaPage extends StatelessWidget {
                   child: Image.network("https://store-images.s-microsoft.com/image/apps.32258.13847644057609868.8865d2a2-5e11-4424-85ce-1db30a161bd9.e67ef3ac-9287-4a7d-a6aa-58c84193c98d?q=90&w=480&h=270", width: 180,)),
               ],
             ),
-        
-              SizedBox(height: 40,),
+                 
+             SizedBox(height: 20,),
+
+             Container(
+              height: 40,
+              width: 350,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(5),
+                color: Colors.white,
+              ),
+              child: Center(
+                child: Text("Adicionar um jogo")
+                ),
+              
+             ),
+
+
+
+              SizedBox(height: 30,),
             
             Container(
               width: 360,
